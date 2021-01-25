@@ -2,35 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Potta One', cursive;
 }
 
 body{
   position: relative;
   height: auto;
+  background-color: #ADD8E6;
 }
 
 header{
-  padding-top: 2%;
-  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
 header .title{
   text-align: center;
+  color: white;
+  font-size: 150%;
 }
 
 .container{
   position: relative;
   margin: 0 auto;
   width: 1000px;
-  height: 800px;
+  height: 750px;
 }
 
 [class^="card"]{  /*float delle colonne*/
   width: 200px;
   height: 225px;
-  background-color: yellow;
+  background-image: url("../assets/img/pattern.png");
+  background-size: contain;
   position: absolute;
   border: 1px solid black;
+  border-radius: 10%;
 }
 
 [class^="card1"]{
@@ -46,15 +52,99 @@ header .title{
   left: 78%;
 }
 
-[class$="mid"]{
+[class*="mid"]{
   top: 34%;
 }
 
-[class$="bot"]{
+[class*="bot"]{
   top: 67%;
 }
 
 footer{
   text-align: center;
   font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.scoperta{
+  width: 200px;
+  height: 225px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10%;
+  left: 27%;
+  top: 34%;
+  background-color: white;
+  background-image: url("../assets/img/palloncino.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+span.int-did, span.int-didS {
+  height: auto;
+  position: absolute;
+  color: red;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+}
+
+.int-did{
+  display: none;
+}
+
+.pall:hover{
+  background-color: white;
+  background-image: url("../assets/img/palloncino.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pall:hover .int-did{
+  display: block;
+}
+
+.nave:hover{
+  background-color: white;
+  background-image: url("../assets/img/nave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nave:hover .int-did{
+  display: block;
+}
+
+.trattore:hover{
+  background-color: white;
+  background-image: url("../assets/img/trattore.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trattore:hover .int-did{
+  display: block;
+}
+
+.bici:hover{
+  background-color: white;
+  background-image: url("../assets/img/bici.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bici:hover .int-did{
+  display: block;
+}
+
+.submarine:hover{
+  background-color: white;
+  background-image: url("../assets/img/submarine.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.submarine:hover .int-did{
+  display: block;
 }
