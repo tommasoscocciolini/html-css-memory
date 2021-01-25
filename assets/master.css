@@ -20,6 +20,7 @@ header .title{
   text-align: center;
   color: white;
   font-size: 150%;
+  text-shadow: 2px 2px 2px #565656;
 }
 
 .container{
@@ -29,17 +30,31 @@ header .title{
   height: 750px;
 }
 
-[class^="card"]{  /*float delle colonne*/
+[class^="card"]{  /*caratteristiche generali cards*/
   width: 200px;
   height: 225px;
   background-image: url("../assets/img/pattern.png");
   background-size: contain;
   position: absolute;
-  border: 1px solid black;
   border-radius: 10%;
+  box-shadow: 3px 3px 4px #565656;
 }
 
-[class^="card1"]{
+.scoperta{
+  width: 200px;
+  height: 225px;
+  position: absolute;
+  border-radius: 10%;
+  left: 27%;
+  top: 34%;
+  background-color: white;
+  background-image: url("../assets/img/palloncino.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 4px #565656;
+}
+
+[class^="card1"]{  /*posizionamento cards*/
   left: 2%;
 }
 [class^="card2"]{
@@ -60,55 +75,39 @@ header .title{
   top: 67%;
 }
 
-footer{
-  text-align: center;
-  font-weight: bold;
-  padding-top: 1%;
-  padding-bottom: 2%;
-}
-
-.scoperta{
-  width: 200px;
-  height: 225px;
-  position: absolute;
-  border: 1px solid black;
-  border-radius: 10%;
-  left: 27%;
-  top: 34%;
-  background-color: white;
-  background-image: url("../assets/img/palloncino.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-span.int-did, span.int-didS {
+span.int-did, span.int-didS { /*positioning della span interna alla card*/
   height: auto;
+  width: 150px;
   position: absolute;
-  color: red;
-  top: 200px;
-  left: 100px;
+  color: #E61986;
+  font-size: 120%;
+  top: 87%;
+  left: 50%;
+  margin-left: -75px;
   text-align: center;
+  text-shadow: 1px 1px 2px #565656;
 }
 
-.int-did{
+.int-did{ /*rendo NON visibili span nelle carte al passaggio*/
   display: none;
 }
 
+/*hover per carte e la loro didascalia*/
 .pall:hover{
   background-color: white;
   background-image: url("../assets/img/palloncino.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-.pall:hover .int-did{
+.pall:hover .int-did{ /*rendo visibili span nelle carte al passaggio*/
   display: block;
 }
 
 .nave:hover{
   background-color: white;
   background-image: url("../assets/img/nave.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -119,7 +118,7 @@ span.int-did, span.int-didS {
 .trattore:hover{
   background-color: white;
   background-image: url("../assets/img/trattore.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -130,7 +129,7 @@ span.int-did, span.int-didS {
 .bici:hover{
   background-color: white;
   background-image: url("../assets/img/bici.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -141,10 +140,17 @@ span.int-did, span.int-didS {
 .submarine:hover{
   background-color: white;
   background-image: url("../assets/img/submarine.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .submarine:hover .int-did{
   display: block;
+}
+
+footer{  /*impostazione footer*/
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
