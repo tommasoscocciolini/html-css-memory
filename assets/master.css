@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  height: auto;
+}
+
+header{
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+header .title{
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 800px;
+}
+
+[class^="card"]{  /*float delle colonne*/
+  width: 200px;
+  height: 225px;
+  background-color: yellow;
+  position: absolute;
+  border: 1px solid black;
+}
+
+[class^="card1"]{
+  left: 2%;
+}
+[class^="card2"]{
+  left: 27%;
+}
+[class^="card3"]{
+  left: 52%;
+}
+[class^="card4"]{
+  left: 78%;
+}
+
+[class$="mid"]{
+  top: 34%;
+}
+
+[class$="bot"]{
+  top: 67%;
+}
+
+footer{
+  text-align: center;
+  font-weight: bold;
+}
