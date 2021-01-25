@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Potta One', cursive;
+}
+
+header{
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+header .title{
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  text-shadow: 2px 2px 2px #565656;
+}
+
+body{
+  margin: 0 150px;
+  background-color: #ADD8E6;
+}
+
+.container{
+  text-align: center;
+}
+
+.card{
+  display: inline-block;
+  width: 200px;
+  height: 225px;
+  background-image: url("../assets/img/pattern.png");
+  background-size: contain;
+  border-radius: 10%;
+  box-shadow: 3px 3px 4px #565656;
+  margin: 10px 10px;
+  position: relative;
+}
+
+.cardSc{
+  display: inline-block;
+  width: 200px;
+  height: 225px;
+  background-color: white;
+  border-radius: 10%;
+  box-shadow: 3px 3px 4px #565656;
+  margin: 10px 10px;
+  position: relative;
+}
+
+.cardbl{
+  display: block;
+}
+
+.cardSc img, .nascosto img{
+  position: absolute;
+  height: 80%;
+  width: auto;
+  top: 5px;
+  left: 10px;
+}
+
+.did{
+  width: 150px;
+  position: absolute;
+  color: #E61986;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -75px;
+  font-size: 120%;
+  text-shadow: 1px 1px 2px #565656;
+}
+
+footer{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}

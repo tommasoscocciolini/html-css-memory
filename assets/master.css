@@ -5,6 +5,18 @@
   font-family: 'Potta One', cursive;
 }
 
+header{
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+header .title{
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  text-shadow: 2px 2px 2px #565656;
+}
+
 body{
   position: relative;
   height: auto;
@@ -30,7 +42,7 @@ header .title{
   height: 750px;
 }
 
-[class^="card"]{  /*caratteristiche generali cards*/
+[class^="card"]{
   width: 200px;
   height: 225px;
   background-image: url("../assets/img/pattern.png");
@@ -54,7 +66,7 @@ header .title{
   box-shadow: 3px 3px 4px #565656;
 }
 
-[class^="card1"]{  /*posizionamento cards*/
+[class^="card1"]{
   left: 2%;
 }
 [class^="card2"]{
@@ -75,7 +87,7 @@ header .title{
   top: 67%;
 }
 
-span.int-did, span.int-didS { /*positioning della span interna alla card*/
+span.int-did, span.int-didS {
   height: auto;
   width: 150px;
   position: absolute;
@@ -88,11 +100,10 @@ span.int-did, span.int-didS { /*positioning della span interna alla card*/
   text-shadow: 1px 1px 2px #565656;
 }
 
-.int-did{ /*rendo NON visibili span nelle carte al passaggio*/
+.int-did{
   display: none;
 }
 
-/*hover per carte e la loro didascalia*/
 .pall:hover{
   background-color: white;
   background-image: url("../assets/img/palloncino.png");
@@ -100,7 +111,7 @@ span.int-did, span.int-didS { /*positioning della span interna alla card*/
   background-repeat: no-repeat;
 }
 
-.pall:hover .int-did{ /*rendo visibili span nelle carte al passaggio*/
+.pall:hover .int-did{
   display: block;
 }
 
@@ -148,9 +159,9 @@ span.int-did, span.int-didS { /*positioning della span interna alla card*/
   display: block;
 }
 
-footer{  /*impostazione footer*/
+footer{
   text-align: center;
   font-weight: bold;
   padding-top: 1%;
   padding-bottom: 2%;
-}
+} */
